@@ -135,6 +135,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                         enviar(leftStartJson);
                         break;
 
+                    //PARA DISPARAR
+                    case R.id.fireBtn:
+                        Coordenada fireStart = new Coordenada("FIRESTART");
+                        String fireStartJson = gson.toJson(fireStart);
+                        enviar(fireStartJson);
+                        break;
+
 
                 }
                 break;
